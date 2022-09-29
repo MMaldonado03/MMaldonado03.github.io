@@ -2,7 +2,7 @@
     width: 10em;
     height: 5ex;
     background-color: rgb(78, 76, 72);
-    border: 2px solid rgb(29, 29, 29);
+    border: 2px solid whitesmoke;
     border-radius: 10px;
     font-weight: bold;
     color: rgb(255, 255, 255);
@@ -10,7 +10,8 @@
 }
 
 .joinBtn:hover {
-    background-color: whitesmoke;
+    background-color: rgb(29, 29, 29), ;
+    color: whitesmoke;
 }
 
 .IranBtn {
