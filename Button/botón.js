@@ -2,21 +2,44 @@
 // ES6: let , const
 console.log("hi")
 
-const theButton = document.querySelector('button')
-console.log(theButton)
+// window.onload = function() {
+//     document.getElementById("marioParty").play();
+// }
+
+const red = document.getElementById('red')
+const magenta = document.getElementById('magenta')
+const yellow = document.getElementById('yellow')
+const green = document.getElementById('green')
+const white = document.getElementById('white')
+//console.log(theButton)
 let theMain = document.querySelector('main')
 let theTxt = document.getElementById('theText')
+let bombPic = document.getElementById('bombPic').src
 
-theButton.addEventListener('click', changeColor)
+red.addEventListener('click', changeColor)
+magenta.addEventListener('click', changeColor)
+yellow.addEventListener('click', changeColor)
+green.addEventListener('click', changeColor)
+white.addEventListener('click', changeColor)
+
+
 
 const bomb = [1,2,3,4,5]
 console.log(bomb)
 
 function changeColor(){
     console.log("is this working")
+    var btn = this.id
+    document.getElementById(btn).disabled = true
     draw = Math.floor(Math.random()*bomb.length)
     if(bomb[draw] == 5){
         theTxt.textContent = "BOOM!"
+        document.getElementById("bombPic").src = "images/Explosion.jpg"
+        document.getElementById('red').disabled = true
+        document.getElementById('magenta').disabled = true
+        document.getElementById('yellow').disabled = true
+        document.getElementById('green').disabled = true
+        document.getElementById('white').disabled = true
     } else {
         theTxt.textContent = "Phew... Safe!"
     }
@@ -24,6 +47,7 @@ function changeColor(){
     bomb.splice(draw,1)
     console.log(bomb)
     
+    //document.getElementById("myImage").src = "landscape.jpg";
    
    
    // select a random number from the list and that number is removed from the list

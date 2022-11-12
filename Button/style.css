@@ -1,6 +1,7 @@
 body {
-    background-color: hotpink;
+    background-color: rgba(90, 105, 80, 0.774);
     font-size: 80px;
+    text-align: center;
 }
 
 
@@ -35,6 +36,10 @@ body {
 }
 
 h5 {
-    background-color: green;
+    background-color: yellow;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.buttonRow{
+    text-align: center;
 }
