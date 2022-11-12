@@ -1,0 +1,40 @@
+body {
+    background-color: hotpink;
+    font-size: 80px;
+}
+
+
+.red {
+    padding: 3vw;
+    border-radius: 50px;
+    background-color: rgb(227,58,41);
+}
+
+.magenta {
+    padding: 3vw;
+    border-radius: 50px;
+    background-color: rgb(231,38,223);
+}
+
+.yellow {
+    padding: 3vw;
+    border-radius: 50px;
+    background-color: rgb(240,240,29);
+}
+
+.green {
+    padding: 3vw;
+    border-radius: 50px;
+    background-color: rgb(103,219,55);
+}
+
+.white {
+    padding: 3vw;
+    border-radius: 50px;
+    background-color: rgb(236,236,238);
+}
+
+h5 {
+    background-color: green;
+    font-family: 'Courier New', Courier, monospace;
+}
