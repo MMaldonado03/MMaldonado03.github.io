@@ -34,7 +34,7 @@ function changeColor(){
     draw = Math.floor(Math.random()*bomb.length)
     if(bomb[draw] == 5){
         theTxt.textContent = "BOOM!"
-        document.getElementById("bombPic").src = "images/Explosion.jpg"
+        document.getElementById("bombPic").src = "Images/Explosion.jpg"
         document.getElementById('red').disabled = true
         document.getElementById('magenta').disabled = true
         document.getElementById('yellow').disabled = true
