@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(234, 238, 231);
+    font-size: 80px;
+    text-align: center;
+}
+
+
+.red {
+    padding: 3vw;
+    
+    background-color: rgb(227,58,41);
+}
+
+.orange {
+    padding: 3vw;
+    
+    background-color: orange;
+}
+
+.yellow {
+    padding: 3vw;
+    
+    background-color: yellow;
+}
+
+.green {
+    padding: 3vw;
+    
+    background-color: green;
+}
+
+.blue {
+    padding: 3vw;
+    
+    background-color: blue;
+}
+
+.quit {
+    padding: 3vw;
+
+    background-color: white
+
+}
+
+.reset{
+    padding: 3vw;
+
+    background-color: white;
+}
+
+h5 {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.buttonRow{
+    text-align: center;
+}
