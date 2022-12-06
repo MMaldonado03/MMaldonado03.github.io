@@ -47,6 +47,11 @@ let theMain = document.querySelector('main')
 let theTxt = document.getElementById('theText')
 let result = document.getElementById('result').src
 let pointstxt = String(points)
+let dil1 = document.getElementById('dil1').src
+let dil2 = document.getElementById('dil2').src
+let dil3 = document.getElementById('dil3').src
+let dil4 = document.getElementById('dil4').src
+let dil5 = document.getElementById('dil5').src
 
 
 red1.addEventListener('click', changeColor)
@@ -88,24 +93,46 @@ console.log(bomb)
 function changeColor(){
     console.log("is this working")
     var btn = this.id
-    var Wow = new Audio("images/wow.mp3") 
-    document.getElementById(btn).disabled = true
+    var Wow = new Audio("images/wow.mp3")
+    var buttonElement = document.getElementById(btn) 
+    buttonElement.disabled = true
     draw = Math.floor(Math.random()*bomb.length)
     if(bomb[draw] == 5 || bomb[draw] == 10 || bomb[draw] == 15 || bomb[draw] == 20 ||bomb[draw] == 25){
         lives--
         theTxt.textContent = "Total Points: "+String(points) + "\n Safe Spaces Remaining: "+String(goodButtonsLeft)+"\n Lives Left: "+String(lives)
-    } 
+        buttonElement.style.backgroundColor = "black"; 
+        buttonElement.style.color = "white";
+        buttonElement.textContent = "EW";
+    }
     
     else {
         points++
         goodButtonsLeft--
         theTxt.textContent = "Total Points: "+String(points) + "\n Safe Spaces Remaining: "+String(goodButtonsLeft)+"\n Lives Left: "+String(lives)
+        switch(buttonElement.className){
+            case "red":
+                buttonElement.style.backgroundColor = "red";
+            break;
+            case "orange":
+                buttonElement.style.backgroundColor = "orange";
+            break;
+            case "yellow":
+                buttonElement.style.backgroundColor = "yellow";
+            break;
+            case "green":
+                buttonElement.style.backgroundColor = "green";
+            break;
+            case "blue":
+                buttonElement.style.backgroundColor = "blue";
+            break;
+        }
     }
 
     if(lives==0){
-        theTxt.textContent = "GAME OVER! Total Points: "+ String(points)
+        theTxt.textContent = "EWW THE CRAYONS MELTED ALL OVER! Total Points: "+ String(points)
 
-        document.getElementById("result").src = "images/eboom.gif"
+        document.getElementById("result").src = "images/fail.jpg"
+
         document.getElementById('red1').disabled = true
         document.getElementById('orange1').disabled = true
         document.getElementById('yellow1').disabled = true
@@ -138,17 +165,33 @@ function changeColor(){
 
     }
 
+    if(lives == 4){
+        document.getElementById("dil1").style.visibility = "hidden"
+    }
+    if(lives == 3){
+        document.getElementById("dil2").style.visibility = "hidden"
+    }
+    if(lives == 2){
+        document.getElementById("dil3").style.visibility = "hidden"
+    }
+    if(lives == 1){
+        document.getElementById("dil4").style.visibility = "hidden"
+    }
+    if(lives == 0){
+        document.getElementById("dil5").style.visibility = "hidden"
+    }
+
     if(points == 20){
         
         
         if(lives==1){
-            theTxt.textContent = "WOW INCREDIBLE! YOU WIN WITH ALL 20 POINTS AND WITH 1 LIFE LEFT! THAT WAS CLOSE!"
+            theTxt.textContent = "WOW INCREDIBLE! WHAT A BEAUTIFUL RAINBOW! YOU WIN WITH ALL 20 POINTS AND WITH 1 CRAYON LEFT! THAT WAS CLOSE!"
         }
         else{
-            "WOW INCREDIBLE! YOU WIN WITH ALL 20 POINTS AND WITH "+String(lives)+" LIVE(S) LEFT!"
+            theTxt.textContent = "WOW INCREDIBLE! WHAT A BEAUTIFUL RAINBOW! YOU WIN WITH ALL 20 POINTS AND WITH "+String(lives)+" LIVE(S) LEFT!"
         }
         
-        document.getElementById("result").src = "images/congrats.jpg"
+        document.getElementById("result").src = "images/Rainbow melt.jpg"
     }
 
 
@@ -156,24 +199,19 @@ function changeColor(){
     bomb.splice(draw,1)
     console.log(bomb)
     
-    //document.getElementById("myImage").src = "landscape.jpg";
-   
-   
-   // select a random number from the list and that number is removed from the list
-   // if say "5" is selected then that button will have the bomb'
 
+// function notHover()
+// var but = this.id
+// {  
+//    item.setAttribute("style", "border-color:white;")
+// }
 
-    // if button wiith bomb is clicked, then the bomb will explode and the image of the bomb on screen will be replaced with an image of an explosion
-
-    
-
-
-    // if the 
-    // theTxt.textContent = "Phew... Safe!"
-    // theTxt.textContent = "BOOM!"
-    //theMain.style.backgroundColor = "yellow"
-    
-
+// function hover()
+// var ton = this.id
+// {  
+//    item.setAttribute("style", "border-color:cyan")
+// }
+  
 }
 
 // document.createElement("p")

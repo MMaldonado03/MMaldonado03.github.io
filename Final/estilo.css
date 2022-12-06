@@ -4,41 +4,75 @@ body {
     text-align: center;
 }
 
-
 .red {
     padding: 3vw;
-    
-    background-color: rgb(227,58,41);
+    border-width: 5px;
+    background-color: white;
+    border-color: black;
+}
+
+.red:hover{
+    border-color: aqua;
+    border-width: 5px;
+    background-color: red;
 }
 
 .orange {
     padding: 3vw;
-    
+    border-width: 5px;
+    background-color: white;
+    border-color: black;
+}
+
+.orange:hover {
+    border-color: aqua;
+    border-width: 5px;
     background-color: orange;
 }
 
 .yellow {
     padding: 3vw;
-    
+    border-width: 5px;
+    background-color: white;
+    border-color: black;
+}
+
+.yellow:hover{
+    border-color: aqua;
+    border-width: 5px;
     background-color: yellow;
 }
 
 .green {
     padding: 3vw;
-    
+    border-width: 5px;
+    background-color: white;
+    border-color: black;
+}
+
+.green:hover{
+    border-color: aqua;
+    border-width: 5px;
     background-color: green;
 }
 
 .blue {
     padding: 3vw;
-    
-    background-color: blue;
+    border-width: 5px;
+    background-color: white;
+    border-color: black;
 }
 
+.blue:hover{
+    border-color: aqua;
+    border-width: 5px;
+    background-color: blue;
+}
 .quit {
     padding: 3vw;
 
-    background-color: white
+    background-color: white;
+    border-color: black;
 
 }
 
@@ -48,11 +82,33 @@ body {
     background-color: white;
 }
 
+.reset:hover{
+    background-color: brown;
+    border-color: brown;
+}
+
 h5 {
     font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.buttonRow{
+.buttonRow1{
+    text-align: center;
+}
+
+.buttonRow2{
+    text-align: center;
+}
+.buttonRow3{
+    text-align: center;
+}
+.buttonRow4{
+    text-align: center;
+}
+.buttonRow5{
+    text-align: center;
+}
+
+.dilRow{
     text-align: center;
 }
