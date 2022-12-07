@@ -183,6 +183,35 @@ function changeColor(){
 
     if(points == 20){
         
+        document.getElementById('red1').disabled = true
+        document.getElementById('orange1').disabled = true
+        document.getElementById('yellow1').disabled = true
+        document.getElementById('green1').disabled = true
+        document.getElementById('blue1').disabled = true
+
+        document.getElementById('red2').disabled = true
+        document.getElementById('orange2').disabled = true
+        document.getElementById('yellow2').disabled = true
+        document.getElementById('green2').disabled = true
+        document.getElementById('blue2').disabled = true
+
+        document.getElementById('red3').disabled = true
+        document.getElementById('orange3').disabled = true
+        document.getElementById('yellow3').disabled = true
+        document.getElementById('green3').disabled = true
+        document.getElementById('blue3').disabled = true
+
+        document.getElementById('red4').disabled = true
+        document.getElementById('orange4').disabled = true
+        document.getElementById('yellow4').disabled = true
+        document.getElementById('green4').disabled = true
+        document.getElementById('blue4').disabled = true
+
+        document.getElementById('red5').disabled = true
+        document.getElementById('orange5').disabled = true
+        document.getElementById('yellow5').disabled = true
+        document.getElementById('green5').disabled = true
+        document.getElementById('blue5').disabled = true
         
         if(lives==1){
             theTxt.textContent = "WOW INCREDIBLE! WHAT A BEAUTIFUL RAINBOW! YOU WIN WITH ALL 20 POINTS AND WITH 1 CRAYON LEFT! THAT WAS CLOSE!"
