@@ -38,7 +38,8 @@ const yellow5 = document.getElementById('yellow5')
 const green5 = document.getElementById('green5')
 const blue5 = document.getElementById('blue5')
 
-let wow = new Audio('images/wow.mp3');
+let wow = new Audio('images/WOW.wav');
+let pop = new Audio('images/pop.wav');
 
 const reset = document.getElementById('reset')
 
@@ -93,10 +94,11 @@ console.log(bomb)
 function changeColor(){
     console.log("is this working")
     var btn = this.id
-    var Wow = new Audio("images/wow.mp3")
+    
     var buttonElement = document.getElementById(btn) 
     buttonElement.disabled = true
     draw = Math.floor(Math.random()*bomb.length)
+    pop.play()
     if(bomb[draw] == 5 || bomb[draw] == 10 || bomb[draw] == 15 || bomb[draw] == 20 ||bomb[draw] == 25){
         lives--
         theTxt.textContent = "Total Points: "+String(points) + "\n Safe Spaces Remaining: "+String(goodButtonsLeft)+"\n Lives Left: "+String(lives)
@@ -182,7 +184,7 @@ function changeColor(){
     }
 
     if(points == 20){
-        
+        wow.play()
         document.getElementById('red1').disabled = true
         document.getElementById('orange1').disabled = true
         document.getElementById('yellow1').disabled = true
@@ -212,7 +214,7 @@ function changeColor(){
         document.getElementById('yellow5').disabled = true
         document.getElementById('green5').disabled = true
         document.getElementById('blue5').disabled = true
-        
+
         if(lives==1){
             theTxt.textContent = "WOW INCREDIBLE! WHAT A BEAUTIFUL RAINBOW! YOU WIN WITH ALL 20 POINTS AND WITH 1 CRAYON LEFT! THAT WAS CLOSE!"
         }
